@@ -1,10 +1,13 @@
 This repositorium contains the code for the article *Deep Ritz Method for Elliptic Differential-Difference Equations* by Anton Selitskiy. It contains three Jupytor notebooks corresponding to the examples in the paper.
 
 **Example 1.** was calculated with file `DeepRitz_D_1D.ipynb`  
+![](/img1.png)
 
 **Example 2.** was calculated with file `DeepRitz_D_Square.ipynb`
+![](/img2.png)
 
 **Example 3.** was calculated with file `DeepRitz_D_Circle.ipynb`
+![](/img3.png)
 
 For each iteration we samlpe # Samples points from the domain to approximate the energy integral (see the table below).
 
