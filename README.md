@@ -9,6 +9,14 @@ This repositorium contains the code for the article *Deep Ritz Method for Ellipt
 **Example 3.** was calculated with file `DeepRitz_D_Circle.ipynb`
 ![](/img3.png)
 
+Each file contains:
+- A function `exact_solution` is defined, that returns the solution $w$ and a function `reconstr` that returns $u = R_Q^{-1}w$. (For Examples 1 and 2 only.)
+- A function `right_hand_side` that returns the right-hand side $f$.
+- The model class `ResidualModel`.
+- A function `FQ` continues an input function by zero and multiplies it by $\alpha(x)$.
+- A function `RQ` that returns $(R_Qu)(x)$ --- the result of the difference operator applied to the function $u(x)$.
+- A training loop and the plot of the solution.
+
 For each iteration we samlpe # Samples points from the domain to approximate the energy integral (see the table below).
 
 | Example        | **# Layers** | **# Samples** | $\|u-u_\theta\|_{C(Q)}$ |
